@@ -7,8 +7,12 @@ export const Header = () => {
   return (
     <Box bg="primary.1" color="white" p={5}>
       <Container maxW="6xl">
-        <Flex direction="row" align="center" justify="space-between">
-          <Box>
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          align="center"
+          justify="space-between"
+        >
+          <Box pb={{ base: 4, md: 0 }}>
             <Link onClick={() => navigate("/")}>
               <img alt="logo" src="/public/logo.svg" width={200} height={20} />
             </Link>

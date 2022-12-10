@@ -19,7 +19,12 @@ export const Wrapper = ({ child }: Props) => {
     >
       <Header />
       <Container maxW="6xl" minH="calc(100vh-100px)">
-        <Flex flex={1} direction="row" justify="space-between" pt={10}>
+        <Flex
+          flex={1}
+          direction="row"
+          justify={{ base: "center", md: "space-between" }}
+          pt={10}
+        >
           {child}
           <Sidebar />
         </Flex>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 const skills = [
   { name: "HTML", rating: 90 },
@@ -13,7 +13,15 @@ const skills = [
 
 export const Sidebar = () => {
   return (
-    <Box shadow="md" color="white" h="100%" w="25%" p={10}>
+    <Box
+      shadow="md"
+      color="white"
+      h="100%"
+      w="35%"
+      p={10}
+      display={{ base: "none", md: "block" }}
+    >
+      <Text fontSize={28}>Skills</Text>
       {skills.map((skill, index) => (
         <Flex direction="column" key={index} w="100%" py={2}>
           <span>{skill.name}</span>

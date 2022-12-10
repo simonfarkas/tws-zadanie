@@ -12,7 +12,7 @@ import {
 
 export const Contact = () => {
   return (
-    <Flex>
+    <Flex w={{ base: "100%", md: "50%" }}>
       <Container maxW="6xl">
         <Text
           fontFamily="Tangerine"
@@ -24,7 +24,7 @@ export const Contact = () => {
         >
           contact
         </Text>
-        <Box color="white" p={10}>
+        <Box color="white" py={6}>
           <form>
             <FormControl experimental_spaceY={2} mb={4} isRequired>
               <FormLabel>Fullname</FormLabel>
@@ -47,8 +47,8 @@ export const Contact = () => {
               />
             </FormControl>
             <FormControl experimental_spaceY={2} mb={4}>
-              <FormLabel>Tel</FormLabel>
-              <Input type="text" variant="flushed" minLength={7} />
+              <FormLabel>Telephone Number</FormLabel>
+              <Input type="tel" variant="flushed" minLength={7} />
             </FormControl>
             <FormControl experimental_spaceY={2} mb={4} isRequired>
               <FormLabel>Subject</FormLabel>
