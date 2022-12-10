@@ -7,6 +7,7 @@ import { theme } from "../chakra";
 import { Home } from "./routes/Home";
 import { About } from "./routes/About";
 import { Wrapper } from "./components/Wrapper";
+import { Contact } from "./routes/Contact";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <Wrapper child={<div>contact</div>} />,
+    element: <Wrapper child={<Contact />} />,
   },
 ]);
 

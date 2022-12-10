@@ -1,20 +1,21 @@
 import React from "react";
-import { Box, Container, Text } from "@chakra-ui/react";
+import { Flex, Container, Text } from "@chakra-ui/react";
 
 export const Footer = () => {
   return (
-    <Box
+    <Flex
       bg="primary.1"
       color="white"
       p={10}
       h={32}
-      mt="auto"
       position="fixed"
-      inset={0}
+      w="100%"
+      bottom={0}
+      mt="auto"
     >
       <Container maxW="6xl">
-        <Text align="center">Simon Farkas &#169; 2022</Text>
+        <Text align="center">Simon Farkas &#169; 2022 </Text>
       </Container>
-    </Box>
+    </Flex>
   );
 };

@@ -1,7 +1,8 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Container, Flex } from "@chakra-ui/react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import React from "react";
+import { Sidebar } from "./Sidebar";
 
 interface Props {
   child?: JSX.Element;
@@ -9,9 +10,20 @@ interface Props {
 
 export const Wrapper = ({ child }: Props) => {
   return (
-    <Flex direction="column" justify="space-between">
+    <Flex
+      direction="column"
+      justify="space-between"
+      bg="primary.1"
+      position="relative"
+      pb={32}
+    >
       <Header />
-      <Box bg="primary.1">{child}</Box>
+      <Container maxW="6xl" minH="calc(100vh-100px)">
+        <Flex flex={1} direction="row" justify="space-between" pt={10}>
+          {child}
+          <Sidebar />
+        </Flex>
+      </Container>
       <Footer />
     </Flex>
   );
