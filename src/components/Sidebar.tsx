@@ -9,6 +9,7 @@ const skills = [
   { name: "Typescript", rating: 75 },
   { name: "NodeJS", rating: 70 },
   { name: "SQL", rating: 40 },
+  { name: "PHP", rating: 50 },
 ];
 
 export const Sidebar = () => {
