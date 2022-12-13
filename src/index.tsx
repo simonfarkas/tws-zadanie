@@ -8,6 +8,7 @@ import { Home } from "./routes/Home";
 import { About } from "./routes/About";
 import { Wrapper } from "./components/Wrapper";
 import { Contact } from "./routes/Contact";
+import { Gallery } from "./routes/Gallery";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/gallery",
-    element: <Wrapper child={<div>gallery</div>} />,
+    element: <Wrapper child={<Gallery />} />,
   },
   {
     path: "/contact",

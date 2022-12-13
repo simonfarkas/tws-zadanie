@@ -18,9 +18,8 @@ export const Sidebar = () => {
       shadow="md"
       color="white"
       h="100%"
-      w="35%"
+      w={{ base: "100%", md: "35%" }}
       p={10}
-      display={{ base: "none", md: "block" }}
     >
       <Text fontSize={28}>Skills</Text>
       {skills.map((skill, index) => (

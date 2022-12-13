@@ -21,7 +21,7 @@ export const Wrapper = ({ child }: Props) => {
       <Container maxW="6xl" minH="calc(100vh-100px)">
         <Flex
           flex={1}
-          direction="row"
+          direction={{ base: "column", md: "row" }}
           justify={{ base: "center", md: "space-between" }}
           pt={10}
         >
