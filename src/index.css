@@ -9,6 +9,14 @@ body {
   min-height: 100vh;
 }
 
+::-moz-selection {
+  background: #e53e3e;
+}
+
+::selection {
+  background: #e53e3e
+}
+
 html {
   background: #22272d;
 }
