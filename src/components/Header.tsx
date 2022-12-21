@@ -1,6 +1,6 @@
 import React from "react";
-import { Flex, Box, Link, Container } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import { Flex, Box, Link, Container } from "@chakra-ui/react";
 
 export const Header = () => {
   const navigate = useNavigate();
