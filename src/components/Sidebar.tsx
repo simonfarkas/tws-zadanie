@@ -8,7 +8,7 @@ const skills = [
   { name: "React", rating: 85 },
   { name: "Typescript", rating: 75 },
   { name: "NodeJS", rating: 70 },
-  { name: "SQL", rating: 40 },
+  { name: "SQL", rating: 50 },
   { name: "PHP", rating: 50 },
 ];
 
