@@ -12,7 +12,7 @@ export const Home = () => {
           align="left"
           color="white"
         >
-          Simon Farkas - Web Developer
+          Simon Farkas
         </Text>
         <Text color="white" align="left" pt={10} maxW="2xl">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
