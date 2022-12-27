@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Box, Text } from "@chakra-ui/react";
-import { SimpleGrid, Flex } from "@chakra-ui/react";
+import { Box, Text, SimpleGrid, Flex, Image } from "@chakra-ui/react";
 
 const photos = [
   { src: "/public/1-compressed.png", title: "wellnesso.sk" },
@@ -23,15 +22,13 @@ export const Gallery = () => {
 
   return (
     <Flex direction="column">
-      <img
+      <Image
         alt="project"
         src={currentImage}
         width={700}
-        style={{
-          height: 400,
-          borderRadius: "5px",
-          objectFit: "cover",
-        }}
+        height={400}
+        rounded="md"
+        objectFit="contain"
       />
       <SimpleGrid columns={[1, null, 2]} mt={10} spacing={2} mx="auto">
         {photos.map((photo, index) => (
@@ -42,12 +39,12 @@ export const Gallery = () => {
             onMouseLeave={() => setIsOverlay({ bool: false, id: index })}
             cursor="pointer"
           >
-            <img
+            <Image
               alt={photo.title}
               src={photo.src}
               width={350}
+              height="full"
               style={{
-                height: "100%",
                 filter: `${
                   isOverlay.bool && isOverlay.id === index
                     ? "brightness(50%)"

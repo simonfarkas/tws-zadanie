@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Flex, Box, Link, Container } from "@chakra-ui/react";
+import { Flex, Box, Link, Container, Image } from "@chakra-ui/react";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -14,7 +14,12 @@ export const Header = () => {
         >
           <Box pb={{ base: 4, md: 0 }}>
             <Link onClick={() => navigate("/")}>
-              <img alt="logo" src="/public/logo.svg" width={200} height={20} />
+              <Image
+                alt="logo"
+                src="/public/logo.svg"
+                width={200}
+                height={20}
+              />
             </Link>
           </Box>
           <Flex experimental_spaceX={4} alignSelf="center">
