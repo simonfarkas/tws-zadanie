@@ -24,7 +24,7 @@ export const Sidebar = () => {
       <Text fontSize={28}>Skills</Text>
       {skills.map((skill, index) => (
         <Flex direction="column" key={index} w="100%" py={2}>
-          <span>{skill.name}</span>
+          <Text mb={2}>{skill.name}</Text>
           <Box bg="gray.700">
             <Flex bg="red.500" w={`${skill.rating}%`} px={2}>
               {skill.rating}%

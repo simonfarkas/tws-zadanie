@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { ChakraProvider } from "@chakra-ui/react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { theme } from "../chakra";
 import { Home } from "./routes/Home";
@@ -35,6 +37,7 @@ const router = createBrowserRouter([
 
 root.render(
   <ChakraProvider theme={theme}>
+    <ToastContainer />
     <RouterProvider router={router} />
   </ChakraProvider>
 );

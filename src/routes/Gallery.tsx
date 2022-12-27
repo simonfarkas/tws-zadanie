@@ -5,6 +5,9 @@ import { SimpleGrid, Flex } from "@chakra-ui/react";
 const photos = [
   { src: "/public/1-compressed.png", title: "wellnesso.sk" },
   { src: "/public/2-compressed.png", title: "RemindeMe" },
+  { src: "/public/3-compressed.png", title: "Posthut" },
+  { src: "/public/4-compressed.png", title: "Todo app" },
+  { src: "/public/5-compressed.png", title: "Budget tracker" },
 ];
 
 export const Gallery = () => {
@@ -27,15 +30,17 @@ export const Gallery = () => {
         style={{
           height: 400,
           borderRadius: "5px",
+          objectFit: "cover",
         }}
       />
-      <SimpleGrid columns={[1, null, 2]} mt={10}>
+      <SimpleGrid columns={[1, null, 2]} mt={10} spacing={2} mx="auto">
         {photos.map((photo, index) => (
           <Box
             key={index}
             position="relative"
             onMouseOver={() => setIsOverlay({ bool: true, id: index })}
             onMouseLeave={() => setIsOverlay({ bool: false, id: index })}
+            cursor="pointer"
           >
             <img
               alt="project"
