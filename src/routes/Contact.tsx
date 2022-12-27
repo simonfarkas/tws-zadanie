@@ -29,6 +29,7 @@ export const Contact = () => {
     description: "",
   });
 
+  // Change input value based on their name
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {

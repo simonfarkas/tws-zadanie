@@ -31,7 +31,9 @@ export const Sidebar = () => {
       w={{ base: "100%", md: "35%" }}
       p={10}
     >
-      <Text fontSize={28}>Skills</Text>
+      <Text fontSize={28} mb={4}>
+        Skills
+      </Text>
       {/*{skills.map((skill, index) => (*/}
       {/*  <Flex direction="column" key={index} w="100%" py={2}>*/}
       {/*    <Text mb={2}>{skill.name}</Text>*/}
@@ -46,8 +48,8 @@ export const Sidebar = () => {
         <Table variant="simple">
           <Thead>
             <Tr>
-              <Th>Technology</Th>
-              <Th>Knowledge</Th>
+              <Th color="white">Technology</Th>
+              <Th color="white">Knowledge</Th>
             </Tr>
           </Thead>
           <Tbody>
