@@ -43,7 +43,7 @@ export const Gallery = () => {
             cursor="pointer"
           >
             <img
-              alt="project"
+              alt={photo.title}
               src={photo.src}
               width={350}
               style={{
